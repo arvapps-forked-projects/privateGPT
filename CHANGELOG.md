@@ -1,5 +1,25 @@
 # Changelog
 
+## [0.5.0](https://github.com/arvapps-forked-projects/privateGPT/compare/v0.4.0...v0.5.0) (2024-03-16)
+
+
+### Features
+
+* **docs:** upgrade fern ([#1596](https://github.com/arvapps-forked-projects/privateGPT/issues/1596)) ([84ad16a](https://github.com/arvapps-forked-projects/privateGPT/commit/84ad16af80191597a953248ce66e963180e8ddec))
+* **llm - embed:** Add support for Azure OpenAI ([#1698](https://github.com/arvapps-forked-projects/privateGPT/issues/1698)) ([1efac6a](https://github.com/arvapps-forked-projects/privateGPT/commit/1efac6a3fe19e4d62325e2c2915cd84ea277f04f))
+* **llm:** adds serveral settings for llamacpp and ollama ([#1703](https://github.com/arvapps-forked-projects/privateGPT/issues/1703)) ([02dc83e](https://github.com/arvapps-forked-projects/privateGPT/commit/02dc83e8e9f7ada181ff813f25051bbdff7b7c6b))
+* **local:** tiktoken cache within repo for offline ([#1467](https://github.com/arvapps-forked-projects/privateGPT/issues/1467)) ([821bca3](https://github.com/arvapps-forked-projects/privateGPT/commit/821bca32e9ee7c909fd6488445ff6a04463bf91b))
+* **nodestore:** add Postgres for the doc and index store ([#1706](https://github.com/arvapps-forked-projects/privateGPT/issues/1706)) ([68b3a34](https://github.com/arvapps-forked-projects/privateGPT/commit/68b3a34b032a08ca073a687d2058f926032495b3))
+* **ui:** add sources check to not repeat identical sources ([#1705](https://github.com/arvapps-forked-projects/privateGPT/issues/1705)) ([290b9fb](https://github.com/arvapps-forked-projects/privateGPT/commit/290b9fb084632216300e89bdadbfeb0380724b12))
+* **ui:** maintain score order when curating sources ([#1643](https://github.com/arvapps-forked-projects/privateGPT/issues/1643)) ([410bf7a](https://github.com/arvapps-forked-projects/privateGPT/commit/410bf7a71f17e77c4aec723ab80c233b53765964))
+* unify settings for vector and nodestore connections to PostgreSQL ([#1730](https://github.com/arvapps-forked-projects/privateGPT/issues/1730)) ([63de7e4](https://github.com/arvapps-forked-projects/privateGPT/commit/63de7e4930ac90dd87620225112a22ffcbbb31ee))
+
+
+### Bug Fixes
+
+* **docs:** Minor documentation amendment ([#1739](https://github.com/arvapps-forked-projects/privateGPT/issues/1739)) ([258d02d](https://github.com/arvapps-forked-projects/privateGPT/commit/258d02d87c5cb81d6c3a6f06aa69339b670dffa9))
+* **settings:** set default tokenizer to avoid running make setup fail ([#1709](https://github.com/arvapps-forked-projects/privateGPT/issues/1709)) ([d17c34e](https://github.com/arvapps-forked-projects/privateGPT/commit/d17c34e81a84518086b93605b15032e2482377f7))
+
 ## [0.4.0](https://github.com/imartinez/privateGPT/compare/v0.3.0...v0.4.0) (2024-03-06)
 
 
