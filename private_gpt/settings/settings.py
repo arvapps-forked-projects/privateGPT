@@ -241,6 +241,10 @@ class OllamaSettings(BaseModel):
         1.1,
         description="Sets how strongly to penalize repetitions. A higher value (e.g., 1.5) will penalize repetitions more strongly, while a lower value (e.g., 0.9) will be more lenient. (Default: 1.1)",
     )
+    request_timeout: float = Field(
+        120.0,
+        description="Time elapsed until ollama times out the request. Default is 120s. Format is float. ",
+    )
 
 
 class AzureOpenAISettings(BaseModel):
@@ -277,6 +281,17 @@ class UISettings(BaseModel):
     )
     delete_all_files_button_enabled: bool = Field(
         False, description="If the button to delete all files is enabled or not."
+    )
+
+
+class RagSettings(BaseModel):
+    similarity_top_k: int = Field(
+        2,
+        description="This value controls the number of documents returned by the RAG pipeline",
+    )
+    similarity_value: float = Field(
+        None,
+        description="If set, any documents retrieved from the RAG must meet a certain match score. Acceptable values are between 0 and 1.",
     )
 
 
@@ -375,6 +390,7 @@ class Settings(BaseModel):
     azopenai: AzureOpenAISettings
     vectorstore: VectorstoreSettings
     nodestore: NodeStoreSettings
+    rag: RagSettings
     qdrant: QdrantSettings | None = None
     postgres: PostgresSettings | None = None
 
